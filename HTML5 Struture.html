@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>HTML5 Layout</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		*{
+	margin:0px;
+	padding:0px;
+}
+h1{
+	font: bold 20px Tahoma;
+}
+h2{
+	font:bold 15px Tahoma;
+}
+#big_wrapper{
+	width:1000px;
+	border:1px solid black;
+	margin:0 auto;
+}
+#top_header{
+	background-color:lightgreen;
+	padding:30px;
+}
+#top_menu{
+	background-color:skyblue;
+}
+#top_menu li{
+	display:inline-block;
+	padding:8px;
+	font:bold 18px Tahoma;
+	list-style:none;
+	cursor:pointer;
+}
+#top_menu li a{
+	text-decoration:none;
+	color:black;
+}
+#top_menu li a:hover{
+	color:#b8860b;
+}
+#main_section{
+	float:left;
+	width:660px;
+	margin:20px;
+}
+article{
+	background-color:#FFFBCC;
+	border:1px solid red;
+	padding:20px;
+	margin-bottom:15px;
+}
+button{
+	float:right;
+	padding:3px;
+	background-color:pink;
+	cursor:pointer;
+}
+#side_news{
+	width:220px;
+	float:left;
+	padding:25px;
+	margin:20px 0px;
+	background-color:#66CCCC;
+}
+#the_footer{
+	clear:both;
+	text-align:center;
+	padding:20px;
+	border-top:3px solid green;
+	background-color:gray;
+	color:white;
+}
+	</style>
+</head>
+<body>
+		<!-- main div -->
+		<div id="big_wrapper">
+			<!-- header start -->
+			<header id="top_header">
+				<h1 align="center">Welcome To My Website</h1>
+			</header>
+			<!-- Navigation Start -->
+			<nav id="top_menu">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Product</a></li>
+					<li><a href="#">Member</a></li>
+					<li><a href="#">Sales</a></li>
+					<li><a href="#">Our Team</a></li>
+					<li><a href="#">Event</a></li>
+					<li><a href="#">About us</a></li>
+					<li><a href="#">Contact us</a></li>
+					<li><a href="#">Register</a></li>
+					<li><a href="#">Login</a></li>
+					<li><a href="#">Admin</a></li>
+				</ul>
+			</nav>
+			<!-- main section -->
+			<section id="main_section">
+					<!-- Article 1 -->
+				<article>
+					<header>
+						<h1>Title of Article 1</h1>
+					</header>
+					<p>This is the Article main Aera.</p>
+					<button>Read more...</button>
+				</article>
+					<!-- article 2  -->
+					<article>
+					<header>
+						<h1>Title of Article 2</h1>
+					</header>
+					<p>This is the Article main Aera.</p>
+					<button>Read more...</button>
+				</article>
+				<!-- Article 3 -->
+				<article>
+					<header>
+						<h1>Title of Article 3</h1>
+					</header>
+					<p>This is the Article main Aera.</p>
+					<button>Read more...</button>
+				</article>
+					<!-- article 4  -->
+					<article>
+					<header>
+						<h1>Title of Article 4</h1>
+					</header>
+					<p>This is the Article main Aera.</p>
+					<button>Read more...</button>
+				</article>
+				<!-- Article 5 -->
+				<article>
+					<header>
+						<h1>Title of Article 5</h1>
+					</header>
+					<p>This is the Article main Aera.</p>
+					<button>Read more...</button>
+				</article>
+					<!-- article 2  -->
+					<article>
+					<header>
+						<h1>Title of Article 6</h1>
+					</header>
+					<p>This is the Article main Aera.</p>
+				</article>
+				</section>
+			<!-- aside start -->
+			<aside id="side_news">
+				<h2>Popular Post</h2>
+				<p>This is the sidebar.</p>
+			</aside>
+			<aside id="side_news">
+				<h2>Popular Post</h2>
+				<p>This is the sidebar.</p>
+			</aside>
+			<aside id="side_news">
+				<h2>Popular Post</h2>
+				<p>This is the sidebar.</p>
+			</aside>
+			<aside id="side_news">
+				<h2>Popular Post</h2>
+				<p>This is the sidebar.</p>
+			</aside>
+			<!-- footer start -->
+			<footer id="the_footer">
+				<h2>Copyright BY Zubair 2017</h2>
+			</footer>
+		</div>
+</body>
+</html>
