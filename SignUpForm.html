@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Registration Form</title>
+	<link rel="stylesheet" type="text/css" href="css/form.css">
+	<style type="text/css">
+		body{
+	background:linear-gradient(45deg,#deb887,#008b8b,#b8860b,#f0e68c);
+	height:642px;
+}
+#registerform{
+	width:400px;
+	background:#24303c;
+	padding:30px;
+	margin:20px auto;
+	color:white;
+	font-family:calibri;
+	border-radius:8px;
+}
+#registerform h2{
+	margin:0;
+	font-size:30px;
+	font-family:arial;
+	margin-bottom:15px;
+	text-align:center;
+	font-weight:bold;
+}
+#txtbox{
+	background:#24303c;
+	border:1px solid #1f53c5;
+	font-size:18px;
+	font-family:calibri;
+	width:90%;
+	padding:10px;
+	color:white;
+	margin-bottom:16px;
+	border-radius:4px;
+}
+#registerform p{
+	float:left;
+	margin: 0 5px 0 0;
+}
+#registerform a{
+	font-size:18px;
+	color:white;
+}
+#btn{
+	width:95%;
+	margin:16px 0px;
+	background:#1f53c5;
+	color:white;
+	padding:13px;
+	border:0;
+	cursor:pointer;
+	font-weight: bold;
+	font-size:16px;
+	border-radius:4px;
+}
+#btn:hover{
+	background:#008b8b;
+}
+	</style>
+</head>
+<body>
+		<!-- mian div -->
+		<div id="registerform">
+			<h2>Sign Up Now</h2>
+			<form action="#">
+<input type="text"  name="first_name" id="txtbox" placeholder="First Name" required="">
+<input type="text"  name="last_name"  id="txtbox" placeholder="Last Name" required="">
+<input type="email" name="my_mail" id="txtbox" placeholder="Email Address" required="">
+<input type="Password" name="my_pass" id="txtbox" placeholder="Password" required="">
+<br> <p> <input type="checkbox" name="check_box">
+	I Agree to<a href="#">&nbsp;Terms and Conditions</a></p>
+	<input type="button" name="submit_btn" id="btn" value="Register Now">
+	<center>
+		<a href="#">Already Hava an Account!</a><br>
+		<a href="#">Back To HomePage</a>
+	</center>
+			</form>
+		</div>
+</body>
+</html>
