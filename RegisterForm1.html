@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Register Form</title>
+	<link rel="stylesheet" type="text/css" href="css/form.css">
+	<style type="text/css">
+		body{
+	background-color:rgba(0,0,0,0.5);
+}
+#registerform{
+	width:500px;
+	background:#d2b48c;
+	padding:25px;
+	margin:20px auto;
+	font-size:18px;
+	font-family: calibri;
+	border-radius:10px;
+	color:black;
+}
+#registerform h2{
+	font:bold 30px Verdana;
+	text-align:center;
+	margin:0;
+	margin-bottom:15px;
+}
+#txtbox{
+	width:90%;
+	background:#f5deb3;
+	border:1px solid black;
+	padding:8px;
+	border-radius:4px;
+	font-size:20px;
+	color:black;
+	font-family: calibri;
+	margin-bottom:5px;
+}
+label{
+	font:bold 20px Tahoma;
+	margin-left:4px;
+}
+#registerform p{
+	float:left;
+	font-size:20px;
+	margin:0 5px 0 0;
+}
+#registerform a{
+	text-decoration:none;
+	font-weight: bold;
+	color:#808080;
+}
+#btn{
+	width:100%;
+	margin:16px 0px;
+	background:#daa520;
+	padding:12px;
+	border:0;
+	border-radius:5px;
+	color:black;
+	font-weight:bold;
+	cursor:pointer;
+	font-size:22px;
+}
+#btn:hover{
+	background: #b8860b;
+}
+#link{
+	text-align:center;
+	color:black;
+}
+	</style>
+</head>
+<body>
+		<!-- main div -->
+		<div id="registerform">
+			<h2>Registration Form</h2>
+		<form action="#">
+			<label>First Name</label>
+			<input type="text" name="first_name" id="txtbox" placeholder="First Name" required=""><br>
+			<label>Last Name</label>
+			<input type="text" name="last_name" id="txtbox" placeholder="Last Name" required=""><br>
+			<label>Email Address</label>
+			<input type="email" name="my_email" id="txtbox" placeholder="Email Address" required=""><br>
+			<label>Confirm Email</label>
+			<input type="email" name="confirm_email" id="txtbox" placeholder="Confirm Email" required=""><br>
+			<label>Your Password</label>
+			<input type="password" name="my_password" id="txtbox" placeholder="Enter Password"><br>
+			<label>Confirm Password</label>
+			<input type="password" name="confirm_password" id="txtbox" placeholder="Confirm Password"><br>
+			<label>Date of Birth</label>
+			<input type="date" name="dob" id="txtbox">
+			<p><input type="checkbox" name="box">I Agree To <a href="#">Terms & Condition</a></p>
+			<input type="button" name="my_btn" id="btn" value="Register Now">
+			<a href="#">Already Have an Account!</a>
+		</form>
+		</div>
+</body>
+</html>
