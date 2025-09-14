@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>My Own Website</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<style type="text/css">
+		h1{
+	font:bold 2em Tahoma;
+	text-align:center;
+}
+h2{
+	font:bold 1em verdana;
+	color:purple;
+}
+#container{
+	width:90%;
+	margin:0 auto;
+	overflow:hidden;
+	background-color:skyblue;
+	border-radius:10px;
+}
+#top_header{
+	padding:15px;
+	background:gold;
+}
+#nav_bar{
+	height:40px;
+	background:#20b2aa;
+	overflow:hidden;
+}	
+#nav_bar li{
+	float:left;
+	list-style:none;
+	margin-left:2em;
+	font:bold 1em Tahoma;
+	margin-top:-5px;
+}
+#nav_bar a{
+	text-decoration:none;
+	color:black;
+}
+#nav_bar a:hover{
+   color:#f0e68c;
+}
+main{
+	padding:20px;
+}
+#main_content{
+	float:left;
+	width:70%;
+	height:700px;
+}
+article{
+	background: #dda0dd;
+	padding:2.1em;
+	border:1px solid black;
+	border-radius:5px;
+	margin-bottom:10px;
+	cursor: pointer;
+}
+article:hover{
+	background:#f0e68c;
+}
+#sidebar{
+	width:30%;
+	float:right;
+}
+#sidebar ul{
+	list-style:none;
+}
+#sidebar li{
+	padding:5px;
+	overflow:hidden;
+	width:100%;
+	margin-bottom:0.3em;
+	font:bold 1.5em Tahoma;
+	background: #8fbc8f;
+	border:1px solid #5f9ea0;
+	text-align:center;
+	border-radius:7px;
+	cursor:pointer;
+}
+#sidebar a{
+	text-decoration:none;
+	color:black;
+}
+#sidebar li:hover{
+	background:#f0e68c;
+	cursor:pointer;
+}
+#my_footer{
+	padding:15px;
+	clear:both;
+	background:#bc8f8f;
+	text-align:center;
+	border-top:5px solid #6a5acd;
+}
+	</style>
+</head>
+<body>
+		<!-- mian container -->
+		<div id="container">
+			<!-- header -->
+			<header id="top_header">
+				<h1>Welcome to my own website</h1>
+			</header>
+			<!-- nav -->
+			<nav id="nav_bar">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Project</a></li>
+					<li><a href="#">Product</a></li>
+					<li><a href="#">Member</a></li>
+					<li><a href="#">Our Team</a></li>
+					<li><a href="#">Document</a></li>
+					<li><a href="#">Contant US</a></li>
+					<li><a href="#">About Us</a></li>
+					<li><a href="#">Login Form</a></li>
+					<li><a href="#">Apply Now</a></li>
+				</ul>
+			</nav>
+			<!-- section -->
+			<main>
+			<section id="main_content">
+				<article>
+				<!-- article 1 -->
+					<header>
+					<h2>Title of Article 1</h2>
+					</header>
+					<p>I have a big desire to become a good web developer,who give a new idea to the world.</p>
+				</article>
+				<article>
+				<!-- article 2 -->
+					<header>
+					<h2>Title of Article 2</h2>
+					</header>
+					<p>I have a big desire to become a good web developer,who give a new idea to the world.</p>
+				</article>
+				<article>
+				<!-- article 3 -->
+					<header>
+					<h2>Title of Article 3</h2>
+					</header>
+					<p>I have a big desire to become a good web developer,who give a new idea to the world.</p>
+				</article>
+				<article>
+				<!-- article 4 -->
+					<header>
+					<h2>Title of Article 4</h2>
+					</header>
+					<p>I have a big desire to become a good web developer,who give a new idea to the world.</p>
+				</article>
+			</section>
+			<!-- sidebar -->
+			<aside id="sidebar">
+				<ul>
+					<li><a href="#">Laptop</a></li>
+					<li><a href="#">Computer</a></li>
+					<li><a href="#">Mobiles</a></li>
+					<li><a href="#">Headphone</a></li>
+					<li><a href="#">Products</a></li>
+					<li><a href="#">Our Team</a></li>
+					<li><a href="#">News Paper</a></li>
+					<li><a href="#">Study Corner</a></li>
+					<li><a href="#">Live Cricket</a></li>
+					<li><a href="#">Urdu Paper</a></li>
+					<li><a href="#">Contact US</a></li>
+					<li><a href="#">Add Post</a></li>
+					<li><a href="#">Login Form</a></li>
+				</ul>
+			</aside>
+			</main>
+			<!-- footer -->
+			<footer id="my_footer">
+				<h2> Copyright &copy; By Desire Web</h2>
+			</footer>
+		</div>
+</body>
+</html>
