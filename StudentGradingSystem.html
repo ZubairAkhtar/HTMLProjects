@@ -1,0 +1,31 @@
+<html>
+<head>
+	<title>Student Grading System</title>
+	<script>
+		function myfunction(){
+		var english=document.getElementById('textbox1').value;
+		var urdu=document.getElementById('textbox2').value;
+		var math=document.getElementById('textbox3').value;
+		var computer=document.getElementById('textbox4').value;
+		var pakstudy=document.getElementById('textbox5').value;
+		var answer=parseFloat(english)+parseFloat(urdu)+parseFloat(math)+parseFloat(computer)+parseFloat(pakstudy);
+		var textbox6=document.getElementById('textbox6');
+		textbox6.value=answer;
+		}
+	</script>
+</head>
+<body bgcolor="lightgreen">
+<center>
+ <h1 style="color:brown;">Student Grading System</h1>
+ <hr width="20%"/>
+ Subject 1:<input type="text" name="textbox1" id="textbox1" style="width:40px;"><br/><br/>
+ Subject 2:<input type="text" name="textbox2" id="textbox2" style="width:40px;"><br/><br/>
+ Subject 3:<input type="text" name="textbox3" id="textbox3" style="width:40px;"><br/><br/>
+ Subject 4:<input type="text" name="textbox4" id="textbox4" style="width:40px;"><br/><br/>
+ Subject 5:<input type="text" name="textbox5" id="textbox5" style="width:40px;"><br/><br/>
+ <input type="submit" name="button" id="button1" onClick="myfunction()" value="Total">
+ <br/><br/>
+ Marks:<input type="text" name="textbox6" id="textbox6" style="width:50px;" readonly>
+</center>
+</body>
+</html>
