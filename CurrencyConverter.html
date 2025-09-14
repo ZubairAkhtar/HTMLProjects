@@ -1,0 +1,50 @@
+<html>
+<title>Currency Converter</title>
+<body>
+<table Align="center" >
+<tr><td  style="background:Pink">
+<h1>
+ Currency Converter </h1>
+</td></tr>
+<tr><td style="background:blueViolet">
+Welcome to online Currency Converter 
+</td></tr>
+</Table>
+<form name="f">
+<table Align="center">
+<tr><td>
+<br>
+PAK Currency (Rupees) : 
+  <input id="inputcurrency" type="number" name ="rupees"> 
+  <input  type="button" name ="Convert" Value = "Convert" onclick="currencyConverter(f.rupees.value)"></td></tr>
+</Table>
+  <br>
+  <table Align="center">
+<tr><td> Dollar (American): </td><td><input id="dollar"> </td></tr>
+<tr><td> Yuan (China):</td><td><input id="yuan"></td></tr>
+<tr><td> Won (Korea): </td><td><input id="won"></td></tr>
+<tr><td> Riyal (Saudia):</td><td> <input id="riyal"></td></tr>
+<tr><td> Dinar (Kuwait): </td><td><input id="dinar"></td></tr>
+<tr><td><input type="reset"  name="reset" Value="Reset Form"></td></tr>
+<tr><td colspan="2">You Can Press Reset Button for resetting the form</td></tr>
+</Table>
+</form>
+<script>
+function currencyConverter(valNum) {
+if(f.rupees.value <= 0)
+window.alert("Enter Value Greaterthan 0");
+else
+{
+   document.getElementById("dollar").value=(valNum/158.93).toFixed(2);
+  document.getElementById("yuan").value=(valNum/23.12).toFixed(2);
+  document.getElementById("won").value=(valNum/0.14).toFixed(2);
+  document.getElementById("riyal").value=(valNum/42.37).toFixed(2);
+   document.getElementById("dinar").value=(valNum/522.21).toFixed(2);
+}
+ }
+</script>
+
+</body>
+
+
+</html>
